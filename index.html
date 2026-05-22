@@ -296,7 +296,7 @@ a.fw-chip:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,
   </div>
 
   <!-- NATIONALE ROUTEN -->
-  <div id="ww-national" class="ww-panel">
+  <div id="ww-national" class="ww-panel active">
     <div style="padding:1.25rem 2rem 0;">
       <div style="font-size:11px;font-weight:700;color:#085041;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:0.5rem;border-left:3px solid #5DCAA5;padding-left:0.6rem;">↳ Nationale Routen — Auswahl</div>
     </div>
@@ -1513,8 +1513,14 @@ a.fw-chip:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,
     <div id="fluss-r4" class="route-panel">
       <div class="route-header"><div class="route-title">Via Jacobi</div><div class="route-subtitle">Konstanz → Genf · 16 Etappen · 320 km</div><div class="route-stats"><span class="route-stat rs-4">Route 4</span><span class="route-stat badge-teil">Teilweise</span></div></div>
       <div class="section"><div class="etappen-list">
-        <div class="etappe-card geplant"><div class="card-accent ca-g"></div><div class="card-inner"><div class="card-left"><div class="card-name">Etappen 1–3 · Konstanz – Rapperswil</div><div class="card-meta">Noch auf der To-Do-Liste</div></div><div class="card-right"><span class="card-tag t-g">Ausstehend</span></div></div></div>
+        <details class="etappe-with-video">
+          <summary><div class="etappe-card"><div class="card-accent ca-4"></div><div class="card-inner"><div class="card-left"><div class="card-name">Etappe 1 · Kreuzlingen – Märstetten <span class="story-badge">📖 Bericht</span> <a class="relive-badge" href="https://www.relive.com/de/view/vZqNKkYz43v" target="_blank" rel="noopener" onclick="event.stopPropagation();">🎬 Relive</a></div><div class="card-meta">Mit Lisbeth Elmiger · S24 direkt nach Hause</div></div><div class="card-right"><div class="card-date">21.5.2026</div><span class="card-tag t-4">Via Jacobi</span></div></div></div></summary>
+          <div class="story-text">
+            <p>Am 21. Mai 2026 hat es geklappt. Lisbeth und ich machten uns auf den Jakobsweg von Kreuzlingen an den Genfersee. Da wir beim Bahnhof Kreuzlingen kein Café antrafen, marschierten wir bereits um 8.50 Uhr los. Nach 2 Stunden ohne Restaurant, WC und Bänkli machten wir auf einem Baumstamm Mittagshalt. Nach weiteren 1½ Stunden, vorbei an Ähren- und Rapsfeldern und einer riesigen Erdbeerplantage, erreichten wir bereits unser Ziel Märstetten — eine Station an der S24. Wir konnten also ohne Umsteigen gemütlich nach Hause gondeln.</p>
+          </div>
+        </details>
               <div class="etappe-card"><div class="card-accent ca-4"></div><div class="card-inner"><div class="card-left"><div class="card-name">Etzel · Luzern – Hertenstein</div><div class="card-meta">Gleich wie Alpenpanoramaweg · bereits absolviert</div></div><div class="card-right"><span class="card-tag t-4">Via Jacobi</span></div></div></div>
+        <div class="etappe-card geplant"><div class="card-accent ca-g"></div><div class="card-inner"><div class="card-left"><div class="card-name">Etappen 2–3 · Märstetten – Rapperswil</div><div class="card-meta">Nächste Etappen auf der To-Do-Liste</div></div><div class="card-right"><span class="card-tag t-g">Ausstehend</span></div></div></div>
       </div></div>
     </div>
 
@@ -3325,6 +3331,7 @@ a.fw-chip:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,
     <span class="fw-chip todo" onclick="document.getElementById('lake-neuenburgersee').scrollIntoView({behavior:'smooth',block:'start'});" style="cursor:pointer;"><span class="fw-dot" style="background:#B4B2A9"></span>Neuenburgersee</span>
     <span class="fw-chip done" onclick="document.getElementById('lake-bodensee').scrollIntoView({behavior:'smooth',block:'start'});" style="cursor:pointer;"><span class="fw-dot" style="background:#4FA8C7"></span>Bodensee</span>
     <span class="fw-chip done" onclick="document.getElementById('lake-vierwaldstaettersee').scrollIntoView({behavior:'smooth',block:'start'});" style="cursor:pointer;"><span class="fw-dot" style="background:#0F6E56"></span>Vierwaldstättersee ✓</span>
+    <span class="fw-chip done" onclick="document.getElementById('lake-alpnachersee').scrollIntoView({behavior:'smooth',block:'start'});" style="cursor:pointer;"><span class="fw-dot" style="background:#378ADD"></span>Alpnachersee ✓</span>
     <span class="fw-chip done" onclick="document.getElementById('lake-zuerichsee-section').scrollIntoView({behavior:'smooth',block:'start'});" style="cursor:pointer;"><span class="fw-dot" style="background:#7F77DD"></span>Zürichsee ✓</span>
     <span class="fw-chip done" onclick="document.getElementById('lake-thunersee-section').scrollIntoView({behavior:'smooth',block:'start'});" style="cursor:pointer;"><span class="fw-dot" style="background:#D4537E"></span>Thunersee ✓</span>
     <span class="fw-chip done" onclick="document.getElementById('lake-lagomaggiore-section').scrollIntoView({behavior:'smooth',block:'start'});" style="cursor:pointer;"><span class="fw-dot" style="background:#1D9E75"></span>Langensee / Lago Maggiore</span>
@@ -4277,6 +4284,22 @@ a.fw-chip:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,
         <summary><div class="etappe-card"><div class="card-accent" style="background:#C85A6E"></div><div class="card-inner"><div class="card-left"><div class="card-name">Rundwanderung Rotsee <a class="relive-badge" href="https://www.relive.com/de/view/vYvExrEwMGq" target="_blank" rel="noopener" onclick="event.stopPropagation();">🎬 Relive</a></div><div class="card-meta">Mit Bruno · Ostersonntag · 51. Hochzeitstag · Restaurant Trumpf Buur Ebikon</div></div><div class="card-right"><div class="card-date">5.4.2026</div><span class="card-tag" style="background:#FBEAF0;color:#72243E;">Rotsee</span></div></div></div></summary>
         <div class="story-text">
           <p>Am Ostersonntag, 5. April 2026, waren wir bei Florian zum Brunch eingeladen, zusammen mit Matthias und Debby. Am Nachmittag fuhren Bruno und ich nach Ebikon und wanderten um den Rotsee. Anschliessend trafen wir uns mit Florian, Inna, Max, Eva, Debby und Matthias zum Nachtessen im Restaurant Trumpf Buur in Ebikon. Wir haben eingeladen — anlässlich unseres <strong>51. Hochzeitstages</strong>. 🥂</p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- ALPNACHERSEE -->
+  <div class="river-header" id="lake-alpnachersee">
+    <div class="river-title"><span class="river-num" style="background:#378ADD">A</span> Alpnachersee</div>
+    <div class="river-meta">Alpnach · Kanton Obwalden · südlicher Arm des Vierwaldstättersees</div>
+  </div>
+  <div class="sub-section">
+    <div class="etappen-list">
+      <details class="etappe-with-video">
+        <summary><div class="etappe-card"><div class="card-accent" style="background:#378ADD"></div><div class="card-inner"><div class="card-left"><div class="card-name">Alpnachstad – Hergiswil · linkes Ufer <span class="story-badge">📖 Bericht</span> <a class="relive-badge" href="https://www.relive.com/de/view/vdvmkZ88xx6" target="_blank" rel="noopener" onclick="event.stopPropagation();">🎬 Relive</a></div><div class="card-meta">Solo · nach Treffen mit Bibliothekskolleginnen in Luzern</div></div><div class="card-right"><div class="card-date">20.5.2026</div><span class="card-tag" style="background:#E6F1FB;color:#0C447C;">Alpnachersee</span></div></div></div></summary>
+        <div class="story-text">
+          <p>Am 20. Mai 2026 fuhr ich nach dem Treffen mit meinen Bibliothekskolleginnen in Luzern weiter nach Alpnachstad. Um den Loper herum spazierte ich zügig am linken Ufer des Alpnachersees und noch ein Stück des Vierwaldstättersees entlang nach Hergiswil.</p>
         </div>
       </details>
     </div>
